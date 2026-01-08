@@ -17,14 +17,8 @@ Supported input formats:
 - Use `--label_col` to specify the label column name  
 
 ---
-## 2. Run
-### Basic usage (load from `data/` directory)
-```bash
-python main.py \
-  --name PBMC \
-  --max_epoch 100
----
-## 3. Dependencies
+
+## 2. Dependencies
 
 This project only relies on common scientific Python packages.
 
@@ -43,7 +37,7 @@ This project only relies on common scientific Python packages.
 - umap-learn
 
 
-## 4.Main Arguments
+## 3.Main Arguments
 --name            Dataset name (used for output naming)
 --data_path       Full path to data file (overrides --name)
 --label_col       Label column name in .h5ad (for evaluation)
@@ -59,4 +53,11 @@ This project only relies on common scientific Python packages.
 --beta            Weight of LSURE loss
 --ablate_contrast Disable contrastive loss (ablation study)
 
+---
+## 4. Run
+### Basic usage (load from `data/` directory)
+```bash
+python main.py \
+  --name PBMC \
+  --max_epoch 100
 
