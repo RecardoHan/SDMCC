@@ -23,7 +23,7 @@ Supported input formats:
 python main.py \
   --name PBMC \
   --max_epoch 100
-
+---
 ## 3. Dependencies
 
 This project only relies on common scientific Python packages.
