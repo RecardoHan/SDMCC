@@ -54,6 +54,7 @@ This project only relies on common scientific Python packages.
 --lambd           Weight of cluster contrastive loss
 --beta            Weight of LSURE loss
 --ablate_contrast Disable contrastive loss (ablation study)
+```
 ---
 ## 4. Run
 ### Basic usage (load from `data/` directory)
@@ -61,4 +62,5 @@ This project only relies on common scientific Python packages.
 python main.py \
   --name PBMC \
   --max_epoch 100
+```
 
