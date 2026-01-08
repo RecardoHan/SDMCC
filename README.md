@@ -38,20 +38,22 @@ This project only relies on common scientific Python packages.
 
 
 ## 3.Main Arguments
---name             Dataset name (used for output naming)
---data_path        Full path to data file (overrides --name)
---label_col        Label column name in .h5ad (for evaluation)
 
---max_epoch        Number of training epochs
---batch_size       Batch size
---lr               Learning rate
---dropout          Feature dropout for augmentation
---temperature      Contrastive learning temperature
---m                Momentum coefficient for key encoder
+```text
+--name            Dataset name (used for output naming)
+--data_path       Full path to data file (overrides --name)
+--label_col       Label column name in .h5ad (for evaluation)
 
---lambd            Weight of cluster contrastive loss
---beta             Weight of LSURE loss
---ablate_contrast  Disable contrastive loss (ablation study)
+--max_epoch       Number of training epochs
+--batch_size      Batch size
+--lr              Learning rate
+--dropout         Feature dropout for augmentation
+--temperature     Contrastive learning temperature
+--m               Momentum coefficient for key encoder
+
+--lambd           Weight of cluster contrastive loss
+--beta            Weight of LSURE loss
+--ablate_contrast Disable contrastive loss (ablation study)
 ---
 ## 4. Run
 ### Basic usage (load from `data/` directory)
